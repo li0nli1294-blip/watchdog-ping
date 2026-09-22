@@ -1,0 +1,12 @@
+[Unit]
+Description=Watchdog de conectividad (ping 8.8.8.8 y 8.8.4.4)
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/watchdog-ping_dns.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
