@@ -22,7 +22,7 @@ Cada vez que configures una nueva procesadora, clona este repositorio, entra a l
 chmod +x install.sh
 ./install.sh
 
-# 4. Verificar estado del servicio
+# Verificar estado del servicio
 ```bash
 sudo systemctl status watchdog-ping.service
 ```
